@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>config/pages/page.ts - Documentation</title>
+    <title>Tutorial: linker-docs-gen - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -37,117 +37,26 @@
 
 <div id="main">
     
-    <h1 class="page-title">config/pages/page.ts</h1>
+    <h1 class="page-title">Tutorial: linker-docs-gen</h1>
     
 
-    
-
-
-
-    
     <section>
-        <article>
-            <pre class="prettyprint source linenums"><code>/**
- * @title pages.ts
- * @desc 페이지 클래스
- * @package @linker/web-front
- *
- * @author linker
- * @since 2023.08.23 Wednesday 00:25:12
- * @version 0.1.0
- * @see =================== 변경 내역 ==================
- * &lt;pre>
- * [작성자][작업일시] - 내용
- * [wskim][2023.08.23 Wednesday 00:25:12] - 최초작성
- * &lt;/pre>
- */
-import { createScreen, Screen } from './screen';
 
-/**
- * URL Path 타입
- * @typedef {PathName}
- */
-type PathName = `/${string}`;
+<header>
+    
 
-/**
- * 페이지 클래스
- * @date 8/24/2023 - 2:09:04 AM
- *
- * @export
- * @interface Page
- * @template T 페이지 타입(일반, 팝업, alert 등)
- * @template S URL Path 타입
- * @template U 권한 타입
- * @extends {Screen&lt;T, S>}
- */
-export interface Page&lt;T extends string, S extends PathName, U>
-  extends Screen&lt;T, S> {
-  /**
-   * 페이지 URL path
-   * @readonly
-   * @type {S}
-   */
-  readonly pathname: S;
+    <h2>linker-docs-gen</h2>
+</header>
 
-  /**
-   * 권한 정보
-   * @readonly
-   * @type {?U}
-   */
-  readonly permission?: U;
+<article>
+    <h1 id="%EB%AC%B8%EC%84%9C-%EC%82%B0%EC%B6%9C(%EC%9E%91%EC%84%B1%EC%A4%91)">문서 산출(작성중)</h1>
+<h2 id="%EC%A3%BC%EC%84%9D-%EC%9E%91%EC%84%B1-%EA%B7%9C%EC%B9%99">주석 작성 규칙</h2>
+<p><a href="./linker-comments.md">jsDoc 주석 작성 규칙</a> 참조</p>
+<h2 id="%EB%AC%B8%EC%84%9C-%EC%B6%94%EC%B6%9C">문서 추출</h2>
+<h2 id="%EB%AC%B8%EC%84%9C-%EB%B0%B0%ED%8F%AC">문서 배포</h2>
+</article>
 
-  /**
-   * 페이지 title
-   * @type {?string}
-   */
-  title?: string;
-
-  // isPageLoading?: boolean;
-}
-
-/**
- * 페이지 정보 생성 함수
- * @export
- * @template T 페이지 타입(일반, 팝업, alert 등)
- * @template S 페이지 URL path
- * @template U 페이지 권한
- * @param {object} props
- * @returns {Page&lt;T, S, U>} 페이지 정보
- */
-export function createPage&lt;T extends string, S extends PathName, U>(props: {
-  screenId?: string; // 페이지(스크린) id
-  screenType: T; // 페이지 타입(일반, 팝업, alert 등)
-  name?: string; // 페이지명
-  title?: string; // 페이지 헤더명
-  category?: S; // 페이지 분류
-  permission?: U; // 페이지 권한
-  pathname: S; // 페이지 url path
-}) {
-  const {
-    name,
-    title,
-    screenType,
-    permission,
-    pathname,
-    screenId = pathname,
-    category = pathname
-  } = props;
-  const screen = createScreen(screenId, screenType, category, name);
-  const page: Page&lt;T, S, U> = {
-    ...screen,
-    name,
-    permission,
-    title: title || name,
-    pathname: pathname || `/${screen.id}`
-  };
-  return page;
-}
-</code></pre>
-        </article>
-    </section>
-
-
-
+</section>
 
     
     
