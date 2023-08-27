@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>config/config.ts - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    
+    <h2><a href="index.html">Home</a></h2><h2><a label="Github repo" href="https://github.com/emaginews/react-seed-project.git" target="_blank" class="menu-item" id="repository" >Github repo</a></h2><h3>Classes</h3><ul><li><a href="JSInterface.html">JSInterface</a><ul class='methods'><li data-type='method'><a href="JSInterface.html#_execNativeInterface">_execNativeInterface</a></li><li data-type='method'><a href="JSInterface.html#_execNativeInterface">_execNativeInterface</a></li><li data-type='method'><a href="JSInterface.html#_setCallback">_setCallback</a></li><li data-type='method'><a href="JSInterface.html#_setCallback">_setCallback</a></li><li data-type='method'><a href="JSInterface.html#dispatchEvent">dispatchEvent</a></li><li data-type='method'><a href="JSInterface.html#dispatchEvent">dispatchEvent</a></li><li data-type='method'><a href="JSInterface.html#execNativeInterface">execNativeInterface</a></li><li data-type='method'><a href="JSInterface.html#execNativeInterface">execNativeInterface</a></li><li data-type='method'><a href="JSInterface.html#interface">interface</a></li><li data-type='method'><a href="JSInterface.html#interface">interface</a></li><li data-type='method'><a href="JSInterface.html#nativeCallback">nativeCallback</a></li><li data-type='method'><a href="JSInterface.html#nativeCallback">nativeCallback</a></li><li data-type='method'><a href="JSInterface.html#platform">platform</a></li><li data-type='method'><a href="JSInterface.html#platform">platform</a></li></ul></li><li><a href="JSInterface_JSInterface.html">JSInterface#JSInterface</a></li><li></li></ul><h3>Tutorials</h3><ul><li><a href="tutorial-linker-coding-rules.html">linker-coding-rules</a></li><li><a href="tutorial-linker-comments.html">linker-comments</a></li><li><a href="tutorial-linker-deploy.html">linker-deploy</a></li><li><a href="tutorial-linker-docs-gen.html">linker-docs-gen</a></li><li><a href="tutorial-linker-storybook.html">linker-storybook</a></li><li><a href="tutorial-linker-test.html">linker-test</a></li></ul><h3>Interfaces</h3><ul><li><a href="BaseNativeInterfaceParams.html">BaseNativeInterfaceParams</a></li><li><a href="BridgeInterface.html">BridgeInterface</a></li><li><a href="NativeInterface.html">NativeInterface</a></li><li><a href="NativeInterfaceAction.html">NativeInterfaceAction</a></li><li><a href="Page.html">Page</a></li><li><a href="Screen.html">Screen</a></li><li><a href="Window.html">Window</a></li></ul><h3>Global</h3><ul><li><a href="global.html#BuildEnv">BuildEnv</a></li><li><a href="global.html#ENV_PREFIX">ENV_PREFIX</a></li><li><a href="global.html#_initJavascriptInterface">_initJavascriptInterface</a></li><li><a href="global.html#_initNativeInterface">_initNativeInterface</a></li><li><a href="global.html#actionArgsToUrlQuery">actionArgsToUrlQuery</a></li><li><a href="global.html#config">config</a></li><li><a href="global.html#createPage">createPage</a></li><li><a href="global.html#createScreen">createScreen</a></li><li><a href="global.html#defaultPageInfoProvider">defaultPageInfoProvider</a></li><li><a href="global.html#dispatchJsEvent">dispatchJsEvent</a></li><li><a href="global.html#echo">echo</a></li><li><a href="global.html#getEnv">getEnv</a></li><li><a href="global.html#getEnvTo">getEnvTo</a></li><li><a href="global.html#getJavascriptBridgeWrapper">getJavascriptBridgeWrapper</a></li><li><a href="global.html#getNativeInterface">getNativeInterface</a></li><li><a href="global.html#getPageFromId">getPageFromId</a></li><li><a href="global.html#getPageFromUrl">getPageFromUrl</a></li><li><a href="global.html#getPlatform">getPlatform</a></li><li><a href="global.html#getRestApi">getRestApi</a></li><li><a href="global.html#getWebInterface">getWebInterface</a></li><li><a href="global.html#initInterface">initInterface</a></li><li><a href="global.html#isAOS">isAOS</a></li><li><a href="global.html#isDev">isDev</a></li><li><a href="global.html#isIOS">isIOS</a></li><li><a href="global.html#isNative">isNative</a></li><li><a href="global.html#isPC">isPC</a></li><li><a href="global.html#nativeBridgeInterfaceCallee">nativeBridgeInterfaceCallee</a></li><li><a href="global.html#nativeSchemeInterfaceAdapter">nativeSchemeInterfaceAdapter</a></li><li><a href="global.html#onInterfaceErrorCallback">onInterfaceErrorCallback</a></li><li><a href="global.html#pages">pages</a></li><li><a href="global.html#toBooleanFromEnv">toBooleanFromEnv</a></li><li><a href="global.html#toBuildEnv">toBuildEnv</a></li><li><a href="global.html#toJson">toJson</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">config/config.ts</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @title config.ts
+ * @desc config 클래스
+ * @package @linker/web-front
+ *
+ * @author linker
+ * @since 2023.08.22 14:47:18
+ * @version 0.1.0
+ * @see =================== 변경 내역 ==================
+ * &lt;pre>
+ * [작성자][작업일시] - 내용
+ * [wskim][2023.08.22 Tuesday 14:47:18] - 최초작성
+ * &lt;/pre>
+ */
+import { Platform, getPlatform } from '@src/common/webview';
+import { BuildEnv, toBuildEnv } from './helper/buildType';
+import { getEnv, getEnvTo, toBooleanFromEnv } from './helper/getEnv';
+import { LinkerPage, pages } from './pages/pages';
+
+/**
+ * Config 클래스
+ * @date 8/24/2023 - 2:15:49 AM
+ *
+ * @export
+ * @typedef {Config}
+ */
+export type Config = {
+  /**
+   * 빌드 환경
+   * @readonly
+   * @type {BuildEnv}
+   */
+  readonly buildEnv: BuildEnv;
+
+  /**
+   * 구동 환경
+   * @readonly
+   * @type {Platform}
+   */
+  readonly platform: Platform;
+
+  /**
+   * 경로 정보
+   * @readonly
+   * @type {object}
+   */
+  readonly paths: {
+    readonly localesPath: string; //  번역 파일 경로 (root 경로: ./public)
+    readonly trFilePrefix: string; // 번역 파일명 prefix (예: translation.*.json)
+  };
+
+  /**
+   * userAgent 정보
+   * @readonly
+   * @type {object}
+   */
+  readonly userAgent: {
+    aos: string; // userAgent(for AOS)
+    ios: string; // userAgent(for iOS)
+  };
+
+  /**
+   * 앱스토어 설정 정보
+   * @readonly
+   * @type {object}
+   */
+  readonly appStore: {
+    // 앱스토어 id 정보
+    readonly aosId: string;
+    readonly iosId: string;
+  };
+
+  /**
+   * API 정보
+   * @readonly
+   * @type {object}
+   */
+  readonly api: {
+    readonly restApi?: string; // gma-api url(임시)
+    readonly restDevApi?: string; // gma-api dev 환경 url
+    readonly restStgApi?: string; // gma-api stg 환경 url
+    readonly restPrdApi?: string; // gma-api prd 환경 url
+    readonly useInternalScheme?: boolean; // 내부 URL scheme 연동방식 사용 여부
+    readonly nativeInternalSchemeUrl?: string; // 네이티브 연동 내부 인터페이스 scheme
+    readonly nativeExternalSchemeUrl?: string; // 네이티브 연동 외부 인터페이스 scheme
+  };
+
+  /**
+   * HTTP 통신 설정 정보
+   * @readonly
+   * @type {object}
+   */
+  readonly http: {
+    readonly timeout: number; // HTTP timeout 시간(밀리초)
+    readonly useCsrf: boolean; // CSRF 토큰 사용 여부
+    readonly csrfHeaderName?: string; // CSRF HTTP 헤더 속성명
+    readonly csrfCookieName?: string; // CSRF 쿠키명
+    readonly restApiAccessToken?: string; // api 엑세스 토큰
+    readonly restApiRefreshToken?: string; // api 리프레쉬 토큰
+    readonly accessTokenExpires?: number; // api 엑세스 토큰 만료시간
+    readonly refreshTokenExpires?: number; // api 리프레쉬 토큰 만료시간
+  };
+
+  /**
+   * 외부 API 정보
+   * @readonly
+   * @type {object}
+   */
+  readonly external: {
+    readonly kakao: {
+      readonly apiKey: string; // 카카오 api 키
+      readonly payKey: string; // 카카오페이 api 키
+      readonly payTestKey: string; // 카카오페이 테스트 api 키
+    };
+    readonly naver: {
+      readonly mapApiClientKey?: string; // 네이버 지도 api client id
+      readonly mapApiSecretKey?: string; // 네이버 지도 api secret key
+    };
+    readonly airbridge: {
+      readonly appId: string; // airbridge 앱 ID
+      readonly webToken: string; // airbridge 웹 SDK 토큰
+    };
+  };
+
+  /**
+   * 페이지 정보
+   * @readonly
+   * @type {?LinkerPage[]}
+   */
+  readonly pages?: LinkerPage[];
+
+  /**
+   * UI 설정정보
+   * @type {object}
+   */
+  ui: {
+    defaultLoadingAnimation: boolean; // 기본 로딩 애니메이션(REST api 호출시 적용)
+  };
+};
+
+/**
+ * Config 객체
+ * @todo React context 대체 검토
+ * @date 8/24/2023 - 2:57:20 AM
+ *
+ * @type {Config}
+ */
+export const config: Config = {
+  buildEnv: getEnvTo('BUILD_ENV', toBuildEnv),
+  platform: getPlatform(),
+  paths: {
+    localesPath: '/locales',
+    trFilePrefix: 'translation'
+  },
+  userAgent: {
+    aos: getEnv('USER_AGENT_FOR_AOS'),
+    ios: getEnv('USER_AGENT_FOR_IOS')
+  },
+  appStore: {
+    aosId: getEnv('AOS_ID'),
+    iosId: getEnv('IOS_ID')
+  },
+  api: {
+    restApi: getEnv('REST_API'),
+    restDevApi: getEnv('REST_DEV_API'),
+    restStgApi: getEnv('REST_STG_API'),
+    restPrdApi: getEnv('REST_PRD_API'),
+    useInternalScheme: getEnvTo('USE_INTERNAL_SCHEME', toBooleanFromEnv),
+    nativeInternalSchemeUrl: getEnv('NATIVE_INTERNAL_SCHEME_URL'),
+    nativeExternalSchemeUrl: getEnv('NATIVE_EXTERNAL_SCHEME_URL')
+  },
+  http: {
+    timeout: parseInt(getEnv('HTTP_TIMEOUT')),
+    useCsrf: getEnvTo('CSRF_USE', toBooleanFromEnv),
+    csrfHeaderName: getEnv('CSRF_HEADER_NAME'),
+    csrfCookieName: getEnv('CSRF_COOKIE_NAME'),
+    restApiAccessToken: getEnv('REST_API_ACCESS_TOKEN'),
+    restApiRefreshToken: getEnv('REST_API_REFRESH_TOKEN'),
+    accessTokenExpires: parseInt(getEnv('ACCESS_TOKEN_EXPIRES_TIME')),
+    refreshTokenExpires: parseInt(getEnv('REFRESH_TOKEN_EXPIRES_TIME'))
+  },
+  external: {
+    kakao: {
+      apiKey: getEnv('KAKAO_API_KEY'),
+      payKey: getEnv('KAKAO_PAY_KEY'),
+      payTestKey: getEnv('KAKAO_PAY_TESTKEY')
+    },
+    naver: {
+      mapApiClientKey: getEnv('NAVER_CLIENT_ID'),
+      mapApiSecretKey: getEnv('NAVER_CLIENT_SECRET')
+    },
+    airbridge: {
+      appId: getEnv('AIRBRIDGE_APP_ID'),
+      webToken: getEnv('AIRBRIDGE_WEB_TOKEN')
+    }
+  },
+  ui: {
+    defaultLoadingAnimation: getEnvTo(
+      'DEFAULT_LOADING_ANIMATION',
+      toBooleanFromEnv
+    )
+  },
+  pages
+};
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a> using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+
+</body>
+</html>
