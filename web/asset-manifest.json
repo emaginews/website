@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/product/web/static/css/main.eeb4ae37.css",
-    "main.js": "/product/web/static/js/main.43fe5cc3.js",
-    "static/js/787.2527f59f.chunk.js": "/product/web/static/js/787.2527f59f.chunk.js",
-    "static/media/logo.svg": "/product/web/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/product/web/index.html",
-    "main.eeb4ae37.css.map": "/product/web/static/css/main.eeb4ae37.css.map",
-    "main.43fe5cc3.js.map": "/product/web/static/js/main.43fe5cc3.js.map",
-    "787.2527f59f.chunk.js.map": "/product/web/static/js/787.2527f59f.chunk.js.map"
+    "main.css": "https://github.com/emaginews/website/static/css/main.eeb4ae37.css",
+    "main.js": "https://github.com/emaginews/website/static/js/main.c9d79f45.js",
+    "static/js/787.2527f59f.chunk.js": "https://github.com/emaginews/website/static/js/787.2527f59f.chunk.js",
+    "static/media/logo.svg": "https://github.com/emaginews/website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "https://github.com/emaginews/website/index.html",
+    "main.eeb4ae37.css.map": "https://github.com/emaginews/website/static/css/main.eeb4ae37.css.map",
+    "main.c9d79f45.js.map": "https://github.com/emaginews/website/static/js/main.c9d79f45.js.map",
+    "787.2527f59f.chunk.js.map": "https://github.com/emaginews/website/static/js/787.2527f59f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eeb4ae37.css",
-    "static/js/main.43fe5cc3.js"
+    "static/js/main.c9d79f45.js"
   ]
 }
